@@ -11,8 +11,6 @@ git clone https://github.com/cbnuirl/cbnu_openpcdet.git
 cd cbnu_openpcdet
 ```
 
-```
-
 # Data Conversion
 
 Change into custom format like:
