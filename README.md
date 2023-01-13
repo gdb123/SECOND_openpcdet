@@ -43,24 +43,43 @@ Sejong BRT 1 Edge:
 
 Please refer to [install.md](docs/install.md) for installation, dataset preparation and making configuration file.
 
-### Testing, Demo
+### Testing
 
 ```
-
+python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKPT}
 ```
 
 Example:
 ```
-
+python test.py --cfg_file cfgs/custom_models/second.yaml --batch_size 4 --ckpt ../ckpt/custom_model/second_daegu.pth
 ```
 
 ### Training
 
 ```
-
+python train.py --cfg_file ${CONFIG_FILE}
 ```
 
 Example:
 ```
+python train.py --cfg_file cfgs/custom_models/second.yaml
+```
 
+### Demo
+
+```
+python demo.py --cfg_file ${CONFIG_FILE} \
+    --ckpt ${CKPT} \
+    --data_path ${POINT_CLOUD_DATA}
+    (--ext .npy)
+```
+
+Default --ext is .pcd. But custom point cloud is .npy
+
+Example:
+```
+python demo.py --cfg_file cfgs/custom_models/second.yaml \
+    --ckpt ../ckpt/custom_model/second_daegu.pth \
+    --data_path ../data/custom/points/000000.npy
+    --ext .npy
 ```
