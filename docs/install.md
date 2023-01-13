@@ -24,15 +24,24 @@ conda activate openpcdet
 
 ## Install pytorch
 
+CUDA version is 11.3
 ```
 conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
 ```
 
-## Git Clone
+## Install spconv
+
+```
+pip install spconv-cu113
+```
+
+## Git Clone & Install requirements
 
 ```
 git clone https://github.com/cbnuirl/cbnu_openpcdet.git
 cd cbnu_openpcdet
+pip install -r requirements.txt
+python setup.py develop
 ```
 
 # Data Conversion
