@@ -86,6 +86,18 @@ data/
 
 Other files will not be used in training
 
+```
+python -m pcdet.datasets.custom.custom_dataset create_custom_infos tools/cfgs/dataset_configs/custom_dataset.yaml
+```
+
+**NOTE**: If dataset have Pedestrian, Cyclist
+
+tools/cfgs/custom_models/second.yaml
+```
+CLASS_NAMES: ['Vehicle', 'Pedestrian', 'Cyclist']  
+...
+```
+
 # Change Configuration File
 
 Modify content:
