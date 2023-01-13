@@ -46,21 +46,43 @@ python setup.py develop
 
 # Data Conversion
 
-Change into custom format like:
-```
-
-```
-
 Prepare data like:
 ```
-
+data/
+  └(DATA_NAME)
+    ├pcd/
+    │ └XX_XX_TXWX_XX_XXX_REXX_XXX.pcd
+    │   -> point cloud(train + val)
+    ├train/
+    │ └XX_XX_TXWX_XX_XXX_REXX_XXX.json
+    │   -> bounding box information
+    └val/
+      └XX_XX_TXWX_XX_XXX_REXX_XXX.json
 ```
 
 Then, run:
 ```
-
+python tools/dataset_converters/custom.py --data_path {DATA_PATH}
 ```
 
+DATA_PATH will be like data/(DATA_NAME)/
+
+Changed into custom format like:
+```
+data/
+  └(DATA_NAME)
+    ├ImageSets/   
+    │	├test.txt
+    │	├train.txt
+    │	└val.txt
+    │     -> index of splited data
+    └labels/
+    │	└XXXXXX.txt
+    │	  -> bounding box information
+    └points/
+        └XXXXXX.npy
+          -> point cloud
+```
 
 # Change Configuration File
 
