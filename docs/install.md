@@ -18,6 +18,9 @@ source ~/.bashrc
 ```
 conda create -n openpcdet python=3.8
 ```
+```
+conda activate openpcdet
+```
 
 ## Install pytorch
 
