@@ -49,7 +49,7 @@ python setup.py develop
 Prepare data like:
 ```
 data/
-  └(DATA_NAME)
+  └custom/
     ├pcd/
     │ └XX_XX_TXWX_XX_XXX_REXX_XXX.pcd
     │   -> point cloud(train + val)
@@ -65,12 +65,10 @@ Then, run:
 python tools/dataset_converters/custom.py --data_path {DATA_PATH}
 ```
 
-DATA_PATH will be like data/(DATA_NAME)/
-
 Changed into custom format like:
 ```
 data/
-  └(DATA_NAME)
+  └custom/
     ├ImageSets/   
     │	├test.txt
     │	├train.txt
