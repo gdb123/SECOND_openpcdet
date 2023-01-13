@@ -97,11 +97,3 @@ tools/cfgs/custom_models/second.yaml
 CLASS_NAMES: ['Vehicle', 'Pedestrian', 'Cyclist']  
 ...
 ```
-
-# Change Configuration File
-
-Modify content:
-
-```
-
-```
