@@ -76,7 +76,7 @@ data/
     │	├train.txt
     │	└val.txt
     │     -> index of splited data
-    └labels/
+    ├labels/
     │	└XXXXXX.txt
     │	  -> bounding box information
     └points/
