@@ -84,6 +84,8 @@ data/
           -> point cloud
 ```
 
+Other files will not be used in training
+
 # Change Configuration File
 
 Modify content:
