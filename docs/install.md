@@ -62,6 +62,10 @@ data/
 
 Then, run:
 ```
+pip install tqdm open3d numpy # If not installed
+```
+
+```
 python tools/dataset_converters/custom.py --data_path {DATA_PATH}
 ```
 
