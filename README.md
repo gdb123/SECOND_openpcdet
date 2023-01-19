@@ -15,8 +15,10 @@ Class accuracy is IoU(Intersection over Union).
 | Daegu(Mix) | 80 | 89.15 | 82.55 | 82.95 | 79.16 | 82.95 | 85.35 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
 | Sejong BRT 1 | 80 | 83.83 | 69.59 | 70.00 | 64.84 | 69.88 | 80.02 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
 | Sejong BRT 1(Mix) | 80 | 81.18 | 70.19 | 70.45 | 61.56 | 70.21 | 76.22 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
-| Sangam Edge | 80 |  | | | | | | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
-| Sejong BRT 1 Edge | 80 | | | | | | | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
+| Sangam Edge | 80 | 81.56 | 66.73 | 69.28 | 63.02 | 68.00 | 65.41 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
+| Sangam Edge(Mix) | 80 | 86.13 | 74.10 | 78.45 | 69.27 | 76.16 | 65.09 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
+| Sejong BRT 1 Edge | 80 | 77.42 | 47.88 | 51.16 | 45.33 | 48.04 | 73.58 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
+| Sejong BRT 1 Edge(Mix) | 80 | 88.93 | 80.99 | 81.34 | 80.39 | 81.31 | 85.76 | [config](tools/cfgs/custom_models/second.yaml) | [log] | [model] |
 
 Real:
 
