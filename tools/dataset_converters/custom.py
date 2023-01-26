@@ -80,7 +80,7 @@ points_path = args.data_path + "points/"
 
 for pcd in tqdm(pcd_list, desc="points"):
     point_cloud = open3d.io.read_point_cloud(pcd_path + pcd)
-    pcd_array = np.asarray(point_cloud.points)
+    pcd_array = np.asarray(point_cloud.points, dtype=np.float32)
     PATH = pcd_path + "../points/" + pcd[:-4] + ".npy"
     np.save(PATH, pcd_array)
 
