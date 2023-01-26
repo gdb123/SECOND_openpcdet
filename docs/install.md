@@ -7,7 +7,7 @@ Anaconda version can be changed. Check https://www.anaconda.com/
 curl -O https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 ```
 ```
-bash Anaconda3-5.2.0-Linux-x86_64.sh
+./Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 ```
 source ~/.bashrc
