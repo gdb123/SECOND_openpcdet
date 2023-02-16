@@ -124,6 +124,7 @@ class DataProcessor(object):
 
         if self.voxel_generator is None:
             self.voxel_generator = VoxelGeneratorWrapper(
+               #给定每个voxel的长宽高[0.05, 0.05, 0.1]
                 vsize_xyz=config.VOXEL_SIZE,
                 coors_range_xyz=self.point_cloud_range,
                 num_point_features=self.num_point_features,
